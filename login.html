@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaZany | Login</title>
+    <link rel="icon" href="image/Icon.ico">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="bg"></div>
+    <div class="bg-blur"></div>
+    <div class="login">
+        <h1>Welcome!</h1>
+        <div class="form_group">
+            <input type="input" id="username" name="user" class="form_field" placeholder="Username" required />
+            <input type="password" id="password" name="pass" class="form_field" placeholder="Password" required />
+        </div>
+        <button class="btnLogin" role="button">Login</button>
+    </div>
+    <script src="/js/particles.js"></script>
+    <script>
+        particlesJS.load('particles', 'js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>

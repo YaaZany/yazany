@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Hurricane', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+#particles {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/anime-night-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-blur {
+  background-color: black;
+  opacity: 15%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.login {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+
+.login h1 {
+  color: gray;
+  font-size: 5vw;
+}
+
+.login .form_group {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.login .form_field {
+  text-align: center;
+  position: static;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 2.5vw;
+  color: gray;
+  margin-top: 30px;
+  padding: 5px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.login .form_field:focus {
+  text-align: center;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #11998e, #38ef7d);
+     border-image: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
+     border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.login ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.login :-moz-placeholder {
+  text-align: center;
+}
+
+.login .btnLogin {
+  font-size: 2vw;
+  font-weight: 200;
+  height: 15%;
+  width: 30%;
+  color: gray;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.login .btnLogin:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.login .btnLogin:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .btnLogin {
+    padding: 13px 50px 13px;
+  }
+}
+/*# sourceMappingURL=login.css.map */
